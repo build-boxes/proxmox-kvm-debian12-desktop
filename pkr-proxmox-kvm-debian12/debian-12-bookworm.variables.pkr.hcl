@@ -5,7 +5,7 @@ variable "iso_file" {
 
 variable "iso_url" {
   type    = string
-  default = "https://cdimage.debian.org/debian-cd/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso"
+  default = "https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso"
 }
 
 variable "iso_storage_pool" {

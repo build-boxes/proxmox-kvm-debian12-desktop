@@ -10,9 +10,9 @@ There are two parts to it.
 ## Usage
 1. Preparing for Image Build
     1. For faster build times, the ISO was pre-downloaded into Proxmox server. The Debian12 Source code binary(iso) used in the Packer script was downloaded from following, and its SHA512 Sum link.
-        - General Repo Page, scroll to the bottom to see the artifacts. [https://get.debian.org/images/release/12.11.0/amd64/iso-cd/](https://get.debian.org/images/release/12.11.0/amd64/iso-cd/)
-        - ISO Link - [https://get.debian.org/images/release/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso](https://get.debian.org/images/release/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso)
-        - SHA512 Sum Link - [https://get.debian.org/images/release/12.11.0/amd64/iso-cd/SHA512SUMS](https://get.debian.org/images/release/12.11.0/amd64/iso-cd/SHA512SUMS)
+        - General Repo Page, scroll to the bottom to see the artifacts. [https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/](https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/)
+        - ISO Link - [https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso](https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso)
+        - SHA512 Sum Link - [https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/SHA512SUMS](https://get.debian.org/images/archive/12.11.0/amd64/iso-cd/SHA512SUMS)
     1. An actual WebServer was available and used in Packer Preseeding, rather then using the default Packer mechanism of inbuilt temporary webserver.
         - To do the same for yourself, just copy all files in the subfolder ./pkr-proxmox-kvm-debian12/http to the actual webserver. Then change the ./pkr-proxmox-kvm-debian12/vars/debian_12.pkrvars.hcl file accordingly.
 1. Image (KVM Template)  Build 
